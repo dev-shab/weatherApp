@@ -19,6 +19,7 @@ buttonElement.onclick = async (e) => {
     weatherData.main.temp - 273.15
   ).toPrecision(3)}°c`;
   document.getElementsByClassName("humidity")[0].innerHTML =
-    weatherData.main.humidity;
-  document.getElementsByClassName("wind")[0].innerHTML = weatherData.wind.speed;
+    weatherData.main.humidity + "%";
+  document.getElementsByClassName("wind")[0].innerHTML =
+    weatherData.wind.speed + " km/h";
 };
